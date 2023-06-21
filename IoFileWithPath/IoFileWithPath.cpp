@@ -41,7 +41,7 @@ int main() {
 	if (infile.is_open())
 	{
 		// Melakukan perulangan setiap baris
-		while (getline(infile, baris)) 
+		while (getline(infile, baris))
 		{
 			// Dan tampilkan di sini
 			cout << baris << '\n';
@@ -49,4 +49,7 @@ int main() {
 		// Tutup file tersebut setelah selesai
 		infile.close();
 	}
+	// Jika tidak ditemukan file maka akan menampilkan ini
+	else cout << "Unable to open file";
+	return 0;
 }
